@@ -1,6 +1,14 @@
-import { useState } from "react";
+"use client";
 
-enum CurrentPage {
+import { useState } from "react";
+import Menu from "./common/menu/Menu";
+import Home from "./home/Home";
+import Gallery from "./gallery/Gallery";
+import Footer from "./common/footer/Footer";
+
+import classes from "./app.module.css";
+
+export enum CurrentPage {
 	HOME = "home",
 	GALLERY = "gallery",
 }
@@ -8,7 +16,19 @@ enum CurrentPage {
 const App = () => {
 	const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.HOME);
 
-	return <>Hello, World?!</>;
+	const onMenuClick = (value: CurrentPage) => {
+		console.log(value);
+		setCurrentPage(value);
+	};
+
+	return (
+		<div className={classes.container}>
+			<Menu action={onMenuClick} />
+			{currentPage === CurrentPage.HOME && <Home />}
+			{currentPage === CurrentPage.GALLERY && <Gallery />}
+			<Footer />
+		</div>
+	);
 };
 
 export default App;
