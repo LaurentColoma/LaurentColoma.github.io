@@ -1,0 +1,58 @@
+.container {
+  display:flex
+}
+
+.content {
+  display: flex;
+}
+
+.description {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.image,
+.skills,
+.about {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  background-color: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 10px 5px 5px #CDCDCD;
+  padding: 12px;
+  gap: 8px;
+  width: fit-content;
+  height: fit-content;
+}
+
+.skills,
+.about {
+  right: 10vw;
+}
+
+.image {
+  top: 15vh;
+}
+
+.skills {
+  top: 5vh;
+}
+
+.about {
+  display: flex;
+  align-items: flex-end;
+  top: 65vh;
+  right: 15vw;
+}
+
+.text {
+  font-size: 16px;
+}
+
+.boldText {
+  font-size: 24px;
+  font-weight: 600;
+}

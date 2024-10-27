@@ -24,8 +24,10 @@ const App = () => {
 	return (
 		<div className={classes.container}>
 			<Menu action={onMenuClick} />
-			{currentPage === CurrentPage.HOME && <Home />}
-			{currentPage === CurrentPage.GALLERY && <Gallery />}
+			<div className={classes.content}>
+				{currentPage === CurrentPage.HOME && <Home />}
+				{currentPage === CurrentPage.GALLERY && <Gallery />}
+			</div>
 			<Footer />
 		</div>
 	);

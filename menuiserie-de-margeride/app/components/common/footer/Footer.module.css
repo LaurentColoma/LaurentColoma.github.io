@@ -1,7 +1,13 @@
 .footer {
   display: flex;
-  position: absolute;
+  position: fixed;
+  justify-content: center;
   width: 100vw;
   height: 2vh;
-  bottom: 0;
+  bottom: 0vh;
+}
+
+.madeBy {
+  font-size: 6px;
+  font-weight: 700px;
 }
