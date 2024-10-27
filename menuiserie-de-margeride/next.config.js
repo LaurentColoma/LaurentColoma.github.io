@@ -3,7 +3,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
 	/* config options here */
-	basePath: "/menuiserie-de-margeride",
+	basePath: "",
 	output: "export",
 	reactStrictMode: true,
 };
