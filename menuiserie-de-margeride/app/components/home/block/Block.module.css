@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  z-index: 2000;
+  background-color: #8C8C87 !important;
+  opacity: .85;
+}
+
+.text {
+  font-size: 24px;
+  font-family: Impact;
+  font-weight: 700;
+}

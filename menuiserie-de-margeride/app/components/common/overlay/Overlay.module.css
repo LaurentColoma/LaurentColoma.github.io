@@ -1,0 +1,12 @@
+.overlay {
+	display: flex;
+	position: absolute;
+	overflow: hidden;
+	opacity: 0.75;
+	background: #403532;
+	z-index: 1999;
+	top: 0;
+	left: 0;
+  height: 100%;
+	width: 100vw;
+}

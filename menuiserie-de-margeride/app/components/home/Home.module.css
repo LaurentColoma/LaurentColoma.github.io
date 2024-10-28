@@ -1,58 +1,42 @@
 .container {
-  display:flex
-}
-
-.content {
-  display: flex;
-}
-
-.description {
   display: flex;
   position: relative;
-  flex-direction: row;
-  width: 100vw;
+  width: 100%;
+  height: 100%;
+  background: #403532;
 }
 
-.image,
-.skills,
-.about {
-  display: flex;
-  flex-direction: column;
-  position: absolute;
-  background-color: #FFFFFF;
-  border-radius: 4px;
-  box-shadow: 10px 5px 5px #CDCDCD;
-  padding: 12px;
+.slideshow {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  animation-name: slideshow;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+}
+
+.skillsTexts,
+.aboutTexts {
+  padding: 16px;
   gap: 8px;
-  width: fit-content;
-  height: fit-content;
 }
 
-.skills,
-.about {
-  right: 10vw;
+.skillsTexts {
+  top: 10vh;
+  left: 5vw;
 }
 
-.image {
-  top: 15vh;
+.aboutTexts {
+  bottom: 10vh;
+  right: 5vw;
 }
 
-.skills {
-  top: 5vh;
-}
 
-.about {
-  display: flex;
-  align-items: flex-end;
-  top: 65vh;
-  right: 15vw;
-}
-
-.text {
-  font-size: 16px;
-}
-
-.boldText {
-  font-size: 24px;
-  font-weight: 600;
+@keyframes slideshow {
+  0%, 15%, 100% { background-image: url("/assets/diapo_1.jpg"); left: 0px; }
+  35%, 50% { background-image: url("/assets/diapo_2.jpg"); left: -150px; }
+  70%, 85% { background-image: url("/assets/diapo_3.jpg"); left: -300px; }
 }

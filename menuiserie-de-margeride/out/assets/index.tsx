@@ -24,6 +24,10 @@ import image_23 from "./23.jpg";
 import image_24 from "./24.jpg";
 
 import camion_contact from "./camion-contact.jpg";
+import diapo_1 from "./diapo_1.jpg";
+import diapo_2 from "./diapo_2.jpg";
+import diapo_3 from "./diapo_3.jpg";
+import logo from "./logo.png";
 
 export {
 	image_1,
@@ -51,4 +55,8 @@ export {
 	image_23,
 	image_24,
 	camion_contact,
+	diapo_1,
+	diapo_2,
+	diapo_3,
+	logo,
 };

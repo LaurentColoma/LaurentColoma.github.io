@@ -1,6 +1,15 @@
+:root {
+  --light-blue: #ACC3F2;
+  --blue: #71A8D9;
+  --heavy-blue: #2A7ABF;
+  --grey: #8C8C87;
+  --heavy-grey: #403532;
+}
+
 body {
   overflow: hidden;
   background-color:	#F8F8F8;
+  margin: 0;
 }
 
 span {

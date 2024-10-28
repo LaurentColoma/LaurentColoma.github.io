@@ -16,14 +16,11 @@ export enum CurrentPage {
 const App = () => {
 	const [currentPage, setCurrentPage] = useState<CurrentPage>(CurrentPage.HOME);
 
-	const onMenuClick = (value: CurrentPage) => {
-		console.log(value);
-		setCurrentPage(value);
-	};
+	const onMenuClick = (value: CurrentPage) => setCurrentPage(value);
 
 	return (
 		<div className={classes.container}>
-			<Menu action={onMenuClick} />
+			<Menu action={onMenuClick} currentPage={currentPage} />
 			<div className={classes.content}>
 				{currentPage === CurrentPage.HOME && <Home />}
 				{currentPage === CurrentPage.GALLERY && <Gallery />}
