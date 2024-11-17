@@ -14,7 +14,6 @@ import classes from "./ContactForm.module.css";
 
 const ContactForm = () => {
 	const emailRef = useRef<HTMLInputElement>();
-	const nameRef = useRef<HTMLInputElement>();
 	const [message, setMessage] = useState<string>("");
 
 	useEffect(() => emailjs.init("_puWsVA-SydTzQEV4"), []);
@@ -27,13 +26,11 @@ const ContactForm = () => {
 
 		try {
 			await emailjs.send(serviceId, templateId, {
-				name: nameRef.current?.value,
-				recipient: emailRef.current?.value,
+				email: emailRef.current?.value,
 				message: message,
 			});
-			console.log("success");
 		} catch (error) {
-			console.log(error);
+			console.error(error);
 		}
 	};
 
@@ -41,11 +38,6 @@ const ContactForm = () => {
 		<Card>
 			<form onSubmit={handleSubmit} className={classes.form}>
 				<div className={classes.formHeader}>
-					<FormControl>
-						<InputLabel htmlFor="name">Nom/Prénom</InputLabel>
-						<Input id="name" ref={nameRef} />
-					</FormControl>
-
 					<FormControl>
 						<InputLabel htmlFor="email">Email</InputLabel>
 						<Input id="email" ref={emailRef} />

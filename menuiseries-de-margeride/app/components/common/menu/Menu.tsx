@@ -65,7 +65,7 @@ const Menu = ({ action }: MenuProps) => {
 						aria-label="gallery-menu-button"
 						onClick={() => action(CurrentPage.BARRIER)}
 					>
-						Barrieres murale et picine
+						Barrieres murale et piscine
 					</Button>
 					<Button
 						className={classes.button}

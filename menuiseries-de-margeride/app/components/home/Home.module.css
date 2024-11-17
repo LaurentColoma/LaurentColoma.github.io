@@ -38,6 +38,8 @@
 
 @keyframes slideshow {
   0%, 15%, 100% { background-image: url("/assets/diapo_desktop_1.jpg"); left: 0px; }
-  35%, 50% { background-image: url("/assets/diapo_desktop_2.jpg"); left: -150px; }
-  70%, 85% { background-image: url("/assets/diapo_desktop_3.png"); left: -300px; }
+  20%, 35% { background-image: url("/assets/diapo_desktop_2.jpg"); left: -150px; }
+  40%, 55% { background-image: url("/assets/diapo_desktop_3.png"); left: -300px; }
+  60%, 75% { background-image: url("/assets/27.jpg"); left: -450px; }
+  80%, 95% { background-image: url("/assets/49.jpg"); left: -600px; }
 }
