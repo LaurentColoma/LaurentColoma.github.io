@@ -7,10 +7,9 @@ import { logo } from "../../../../public/assets";
 
 interface MenuProps {
 	action: (value: CurrentPage) => void;
-	currentPage: CurrentPage;
 }
 
-const Menu = ({ action, currentPage }: MenuProps) => {
+const Menu = ({ action }: MenuProps) => {
 	return (
 		<div className={classes.container}>
 			<div className={classes.enterprise}>
@@ -29,64 +28,62 @@ const Menu = ({ action, currentPage }: MenuProps) => {
 					</span>
 				</div>
 			</div>
-			{currentPage !== CurrentPage.HOME && (
+
+			<div className={classes.buttonContainer}>
 				<Button
+					variant="contained"
 					className={classes.button}
 					aria-label="home-menu-button"
 					onClick={() => action(CurrentPage.HOME)}
 				>
 					Accueil
 				</Button>
-			)}
-			{currentPage === CurrentPage.HOME && (
-				<div className={classes.buttonContainer}>
-					<ButtonGroup variant="contained" className={classes.buttonGroup}>
-						<Button
-							className={classes.button}
-							aria-label="gallery-menu-button"
-							onClick={() => action(CurrentPage.VOLETS)}
-						>
-							Volets roulants/battants
-						</Button>
-						<Button
-							className={classes.button}
-							aria-label="gallery-menu-button"
-							onClick={() => action(CurrentPage.GARAGE_DOOR)}
-						>
-							Volets roulants/battants
-						</Button>
-						<Button
-							className={classes.button}
-							aria-label="gallery-menu-button"
-							onClick={() => action(CurrentPage.GUARDRAIL)}
-						>
-							Garde corps
-						</Button>
-						<Button
-							className={classes.button}
-							aria-label="gallery-menu-button"
-							onClick={() => action(CurrentPage.BARRIER)}
-						>
-							Barriere murale et brise vue
-						</Button>
-						<Button
-							className={classes.button}
-							aria-label="gallery-menu-button"
-							onClick={() => action(CurrentPage.OTHERS)}
-						>
-							Autres
-						</Button>
-					</ButtonGroup>
+				<ButtonGroup variant="contained" className={classes.buttonGroup}>
 					<Button
-						className={classes.contactButton}
-						variant="contained"
+						className={classes.button}
 						aria-label="gallery-menu-button"
-						onClick={() => action(CurrentPage.CONTACTS)}
+						onClick={() => action(CurrentPage.VOLETS)}
 					>
-						Informations de contact
+						Volets roulants/battants
 					</Button>
-				</div>
-			)}
+					<Button
+						className={classes.button}
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.GARAGE_DOOR)}
+					>
+						Volets roulants/battants
+					</Button>
+					<Button
+						className={classes.button}
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.GUARDRAIL)}
+					>
+						Garde corps
+					</Button>
+					<Button
+						className={classes.button}
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.BARRIER)}
+					>
+						Barriere murale et brise vue
+					</Button>
+					<Button
+						className={classes.button}
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.OTHERS)}
+					>
+						Autres
+					</Button>
+				</ButtonGroup>
+				<Button
+					className={classes.contactButton}
+					variant="contained"
+					aria-label="gallery-menu-button"
+					onClick={() => action(CurrentPage.CONTACTS)}
+				>
+					Informations de contact
+				</Button>
+			</div>
 		</div>
 	);
 };

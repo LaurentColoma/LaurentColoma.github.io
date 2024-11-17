@@ -7,6 +7,7 @@ import Gallery from "./gallery/Gallery";
 import Footer from "./common/footer/Footer";
 
 import classes from "./app.module.css";
+import Contact from "./contact/Contact";
 
 export enum CurrentPage {
 	HOME = "home",
@@ -25,11 +26,12 @@ const App = () => {
 
 	return (
 		<div className={classes.container}>
-			<Menu action={onMenuClick} currentPage={currentPage} />
+			<Menu action={onMenuClick} />
 			<div className={classes.content}>
 				{currentPage === CurrentPage.HOME && <Home />}
 				{currentPage !== CurrentPage.HOME &&
 					currentPage !== CurrentPage.CONTACTS && <Gallery />}
+				{currentPage === CurrentPage.CONTACTS && <Contact />}
 			</div>
 			<Footer />
 		</div>
