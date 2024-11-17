@@ -6,6 +6,7 @@
   width: 100vw;
   height: fit-content;
   padding: 16px 0px;
+  gap: 16px;
 }
 
 .enterprise {
@@ -17,14 +18,42 @@
   margin-left: 24px;
 }
 
-.enterpriseText {
-  color: #F26D85;
+.titleContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.enterpriseTitle {
+  color: #eb4966;
+  font-size: 60px;
+  font-weight: 700;
+}
+
+.enterpriseSubtitle {
+  color: #eb4966;
   font-size: 40px;
   font-weight: 700;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0px 24px !important;
+  gap: 8px;
+}
+
+.buttonGroup {
+  border-radius: unset !important;
+  box-shadow: unset !important;
 }
 
 .button {
   width: fit-content;
   color: #F26D85;
-  margin-left: 24px !important;
+}
+
+.contactButton {
+  width: fit-content;
+  color: #F26D85;
 }

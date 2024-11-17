@@ -10,7 +10,12 @@ import classes from "./app.module.css";
 
 export enum CurrentPage {
 	HOME = "home",
-	GALLERY = "gallery",
+	VOLETS = "volets",
+	GARAGE_DOOR = "garage door",
+	GUARDRAIL = "guardrail",
+	BARRIER = "barrier",
+	OTHERS = "others",
+	CONTACTS = "contacts",
 }
 
 const App = () => {
@@ -23,7 +28,8 @@ const App = () => {
 			<Menu action={onMenuClick} currentPage={currentPage} />
 			<div className={classes.content}>
 				{currentPage === CurrentPage.HOME && <Home />}
-				{currentPage === CurrentPage.GALLERY && <Gallery />}
+				{currentPage !== CurrentPage.HOME &&
+					currentPage !== CurrentPage.CONTACTS && <Gallery />}
 			</div>
 			<Footer />
 		</div>

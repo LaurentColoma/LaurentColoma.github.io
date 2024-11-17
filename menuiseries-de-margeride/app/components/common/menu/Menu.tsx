@@ -1,4 +1,4 @@
-import { Button } from "@mui/material";
+import { Button, ButtonGroup } from "@mui/material";
 
 import { CurrentPage } from "../../app";
 
@@ -20,10 +20,16 @@ const Menu = ({ action, currentPage }: MenuProps) => {
 					height={logo.height / 5}
 					width={logo.width / 5}
 				/>
-				<span className={classes.enterpriseText}>Menuiseries de Margeride</span>
-				<span>Fourniture et pose de Menuiseries (PVC - BOIS - ALUMINIUM)</span>
+				<div className={classes.titleContainer}>
+					<span className={classes.enterpriseTitle}>
+						Menuiseries de Margeride
+					</span>
+					<span className={classes.enterpriseSubtitle}>
+						Fourniture et pose de Menuiseries (PVC - BOIS - ALUMINIUM)
+					</span>
+				</div>
 			</div>
-			{currentPage === CurrentPage.GALLERY && (
+			{currentPage !== CurrentPage.HOME && (
 				<Button
 					className={classes.button}
 					aria-label="home-menu-button"
@@ -33,13 +39,53 @@ const Menu = ({ action, currentPage }: MenuProps) => {
 				</Button>
 			)}
 			{currentPage === CurrentPage.HOME && (
-				<Button
-					className={classes.button}
-					aria-label="gallery-menu-button"
-					onClick={() => action(CurrentPage.GALLERY)}
-				>
-					Galerie
-				</Button>
+				<div className={classes.buttonContainer}>
+					<ButtonGroup variant="contained" className={classes.buttonGroup}>
+						<Button
+							className={classes.button}
+							aria-label="gallery-menu-button"
+							onClick={() => action(CurrentPage.VOLETS)}
+						>
+							Volets roulants/battants
+						</Button>
+						<Button
+							className={classes.button}
+							aria-label="gallery-menu-button"
+							onClick={() => action(CurrentPage.GARAGE_DOOR)}
+						>
+							Volets roulants/battants
+						</Button>
+						<Button
+							className={classes.button}
+							aria-label="gallery-menu-button"
+							onClick={() => action(CurrentPage.GUARDRAIL)}
+						>
+							Garde corps
+						</Button>
+						<Button
+							className={classes.button}
+							aria-label="gallery-menu-button"
+							onClick={() => action(CurrentPage.BARRIER)}
+						>
+							Barriere murale et brise vue
+						</Button>
+						<Button
+							className={classes.button}
+							aria-label="gallery-menu-button"
+							onClick={() => action(CurrentPage.OTHERS)}
+						>
+							Autres
+						</Button>
+					</ButtonGroup>
+					<Button
+						className={classes.contactButton}
+						variant="contained"
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.CONTACTS)}
+					>
+						Informations de contact
+					</Button>
+				</div>
 			)}
 		</div>
 	);

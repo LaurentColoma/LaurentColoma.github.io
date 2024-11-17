@@ -1,14 +1,5 @@
 import classes from "./Home.module.css";
 
-// const skillsTexts = [
-// 	"",
-// 	"Volets roulants/battants",
-// 	"Porte de garage",
-// 	"Garde corps",
-// 	"Barriere murale et brise vue",
-// 	"Moustiquaires, etc...",
-// ];
-
 // const aboutTexts = [
 // 	"Haute-Garonne, Tarn, Aude et Hérault",
 // 	"7 rue la liberté, 31250 Revel",
