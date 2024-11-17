@@ -1,5 +1,5 @@
 import emailjs from "@emailjs/browser";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import {
 	Button,
@@ -15,6 +15,7 @@ import classes from "./ContactForm.module.css";
 const ContactForm = () => {
 	const emailRef = useRef<HTMLInputElement>();
 	const nameRef = useRef<HTMLInputElement>();
+	const [message, setMessage] = useState<string>("");
 
 	useEffect(() => emailjs.init("_puWsVA-SydTzQEV4"), []);
 
@@ -28,7 +29,9 @@ const ContactForm = () => {
 			await emailjs.send(serviceId, templateId, {
 				name: nameRef.current?.value,
 				recipient: emailRef.current?.value,
+				message: message,
 			});
+			console.log("success");
 		} catch (error) {
 			console.log(error);
 		}
@@ -40,12 +43,12 @@ const ContactForm = () => {
 				<div className={classes.formHeader}>
 					<FormControl>
 						<InputLabel htmlFor="name">Nom/Prénom</InputLabel>
-						<Input id="name" />
+						<Input id="name" ref={nameRef} />
 					</FormControl>
 
 					<FormControl>
 						<InputLabel htmlFor="email">Email</InputLabel>
-						<Input id="email" />
+						<Input id="email" ref={emailRef} />
 					</FormControl>
 				</div>
 
@@ -56,6 +59,7 @@ const ContactForm = () => {
 						minRows={4}
 						maxRows={6}
 						placeholder="tapez votre message ici..."
+						onChange={(e) => setMessage(e.target.value)}
 					/>
 				</FormControl>
 
