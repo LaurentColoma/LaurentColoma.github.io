@@ -1,5 +1,8 @@
+import ContactForm from "../common/form/ContactForm";
 import LocalisationMap from "../common/map/LocalisationMap";
 import BlockText from "../home/block/BlockText";
+
+import classes from "./Contact.module.css";
 
 const aboutTexts = [
 	"Stéphane Coloma",
@@ -21,11 +24,14 @@ const horaire = [
 
 const Contact = () => {
 	return (
-		<>
-			<BlockText contentText={aboutTexts} />
-			<BlockText contentText={horaire} />
+		<div className={classes.container}>
+			<div className={classes.infos}>
+				<BlockText contentText={aboutTexts} />
+				<BlockText contentText={horaire} />
+			</div>
 			<LocalisationMap />
-		</>
+			<ContactForm />
+		</div>
 	);
 };
 

@@ -9,7 +9,7 @@ const LocalisationMap = () => {
 				latitude: 43.45941,
 				zoom: 14,
 			}}
-			style={{ width: 600, height: 400 }}
+			style={{ width: 500, height: 300 }}
 			mapStyle="https://api.maptiler.com/maps/streets/style.json?key=PzN4DInMpNIt9k0jV2v1"
 		/>
 	);

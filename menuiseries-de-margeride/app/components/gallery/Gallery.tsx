@@ -84,18 +84,6 @@ const guardrail = [
 ];
 const barrier = [
 	{
-		original: images.image_28.src,
-		thumbnail: images.image_28.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_29.src,
-		thumbnail: images.image_29.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
 		original: images.image_30.src,
 		thumbnail: images.image_30.src,
 		thumbnailHeight: 69,
@@ -121,6 +109,18 @@ const barrier = [
 	},
 ];
 const others = [
+	{
+		original: images.image_28.src,
+		thumbnail: images.image_28.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_29.src,
+		thumbnail: images.image_29.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
 	{
 		original: images.image_53.src,
 		thumbnail: images.image_53.src,

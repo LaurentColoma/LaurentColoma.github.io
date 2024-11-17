@@ -1,0 +1,12 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  gap: 16px;
+}
+
+.formHeader {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
