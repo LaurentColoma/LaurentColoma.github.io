@@ -12,7 +12,7 @@ import Contact from "./contact/Contact";
 export enum CurrentPage {
 	HOME = "home",
 	VOLETS = "volets",
-	GARAGE_DOOR = "garage door",
+	GARAGE_DOOR = "garage_door",
 	GUARDRAIL = "guardrail",
 	BARRIER = "barrier",
 	OTHERS = "others",
@@ -30,7 +30,9 @@ const App = () => {
 			<div className={classes.content}>
 				{currentPage === CurrentPage.HOME && <Home />}
 				{currentPage !== CurrentPage.HOME &&
-					currentPage !== CurrentPage.CONTACTS && <Gallery />}
+					currentPage !== CurrentPage.CONTACTS && (
+						<Gallery currentPage={currentPage} />
+					)}
 				{currentPage === CurrentPage.CONTACTS && <Contact />}
 			</div>
 			<Footer />

@@ -2,63 +2,9 @@ import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
 import * as images from "../../../public/assets/index";
-import classes from "./Gallery.module.css";
+import { CurrentPage } from "../app";
 
-const gallery = [
-	{
-		original: images.image_1.src,
-		thumbnail: images.image_1.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_2.src,
-		thumbnail: images.image_2.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_3.src,
-		thumbnail: images.image_3.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_4.src,
-		thumbnail: images.image_4.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_6.src,
-		thumbnail: images.image_6.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_7.src,
-		thumbnail: images.image_7.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_8.src,
-		thumbnail: images.image_8.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_9.src,
-		thumbnail: images.image_9.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
-		original: images.image_10.src,
-		thumbnail: images.image_10.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
+const volets = [
 	{
 		original: images.image_11.src,
 		thumbnail: images.image_11.src,
@@ -72,84 +18,158 @@ const gallery = [
 		thumbnailWidth: 92,
 	},
 	{
+		original: images.image_52.src,
+		thumbnail: images.image_52.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_58.src,
+		thumbnail: images.image_58.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+];
+const garage_door = [
+	{
 		original: images.image_13.src,
 		thumbnail: images.image_13.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_14.src,
-		thumbnail: images.image_14.src,
+		original: images.image_46.src,
+		thumbnail: images.image_46.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_15.src,
-		thumbnail: images.image_15.src,
+		original: images.image_47.src,
+		thumbnail: images.image_47.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_16.src,
-		thumbnail: images.image_16.src,
+		original: images.image_48.src,
+		thumbnail: images.image_48.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_17.src,
-		thumbnail: images.image_17.src,
+		original: images.image_49.src,
+		thumbnail: images.image_49.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+];
+const guardrail = [
+	{
+		original: images.image_10.src,
+		thumbnail: images.image_10.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_18.src,
-		thumbnail: images.image_18.src,
+		original: images.image_38.src,
+		thumbnail: images.image_38.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_19.src,
-		thumbnail: images.image_19.src,
+		original: images.image_39.src,
+		thumbnail: images.image_39.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+];
+const barrier = [
+	{
+		original: images.image_28.src,
+		thumbnail: images.image_28.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_20.src,
-		thumbnail: images.image_20.src,
+		original: images.image_29.src,
+		thumbnail: images.image_29.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_21.src,
-		thumbnail: images.image_21.src,
+		original: images.image_30.src,
+		thumbnail: images.image_30.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_22.src,
-		thumbnail: images.image_22.src,
+		original: images.image_31.src,
+		thumbnail: images.image_31.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_23.src,
-		thumbnail: images.image_23.src,
+		original: images.image_32.src,
+		thumbnail: images.image_32.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_24.src,
-		thumbnail: images.image_24.src,
+		original: images.image_33.src,
+		thumbnail: images.image_33.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+];
+const others = [
+	{
+		original: images.image_53.src,
+		thumbnail: images.image_53.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_55.src,
+		thumbnail: images.image_55.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_57.src,
+		thumbnail: images.image_57.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_54.src,
+		thumbnail: images.image_54.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.image_56.src,
+		thumbnail: images.image_56.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 ];
 
-const Gallery = () => {
+interface GalleryProps {
+	currentPage: CurrentPage;
+}
+
+const Gallery = ({ currentPage }: GalleryProps) => {
 	return (
-		<div className={classes.container}>
-			<ImageGallery items={gallery} />
-		</div>
+		<>
+			{currentPage === CurrentPage.VOLETS && <ImageGallery items={volets} />}
+			{currentPage === CurrentPage.GARAGE_DOOR && (
+				<ImageGallery items={garage_door} />
+			)}
+			{currentPage === CurrentPage.GUARDRAIL && (
+				<ImageGallery items={guardrail} />
+			)}
+			{currentPage === CurrentPage.BARRIER && <ImageGallery items={barrier} />}
+			{currentPage === CurrentPage.OTHERS && <ImageGallery items={others} />}
+		</>
 	);
 };
 

@@ -51,7 +51,7 @@ const Menu = ({ action }: MenuProps) => {
 						aria-label="gallery-menu-button"
 						onClick={() => action(CurrentPage.GARAGE_DOOR)}
 					>
-						Volets roulants/battants
+						Portes de garage
 					</Button>
 					<Button
 						className={classes.button}
