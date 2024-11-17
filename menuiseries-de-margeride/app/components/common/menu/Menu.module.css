@@ -1,9 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
+  position: fixed;
+  z-index: 9999;
   width: 100vw;
   height: fit-content;
-  background-color: #403532;
   padding: 16px 0px;
 }
 

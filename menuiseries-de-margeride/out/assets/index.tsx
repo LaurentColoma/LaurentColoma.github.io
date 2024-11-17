@@ -2,7 +2,6 @@ import image_1 from "./1.jpg";
 import image_2 from "./2.jpg";
 import image_3 from "./3.jpg";
 import image_4 from "./4.jpg";
-import image_5 from "./5.jpg";
 import image_6 from "./6.jpg";
 import image_7 from "./7.jpg";
 import image_8 from "./8.jpg";
@@ -24,9 +23,9 @@ import image_23 from "./23.jpg";
 import image_24 from "./24.jpg";
 
 import camion_contact from "./camion-contact.jpg";
-import diapo_1 from "./diapo_1.jpg";
-import diapo_2 from "./diapo_2.jpg";
-import diapo_3 from "./diapo_3.jpg";
+import diapo_desktop_1 from "./diapo_desktop_1.jpg";
+import diapo_desktop_2 from "./diapo_desktop_2.jpg";
+import diapo_desktop_3 from "./diapo_desktop_3.png";
 import logo from "./logo.png";
 
 export {
@@ -34,7 +33,6 @@ export {
 	image_2,
 	image_3,
 	image_4,
-	image_5,
 	image_6,
 	image_7,
 	image_8,
@@ -55,8 +53,8 @@ export {
 	image_23,
 	image_24,
 	camion_contact,
-	diapo_1,
-	diapo_2,
-	diapo_3,
+	diapo_desktop_1,
+	diapo_desktop_2,
+	diapo_desktop_3,
 	logo,
 };

@@ -30,12 +30,6 @@ const gallery = [
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_5.src,
-		thumbnail: images.image_5.src,
-		thumbnailHeight: 69,
-		thumbnailWidth: 92,
-	},
-	{
 		original: images.image_6.src,
 		thumbnail: images.image_6.src,
 		thumbnailHeight: 69,

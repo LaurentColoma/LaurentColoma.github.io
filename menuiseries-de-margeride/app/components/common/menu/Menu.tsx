@@ -21,6 +21,7 @@ const Menu = ({ action, currentPage }: MenuProps) => {
 					width={logo.width / 5}
 				/>
 				<span className={classes.enterpriseText}>Menuiseries de Margeride</span>
+				<span>Fourniture et pose de Menuiseries (PVC - BOIS - ALUMINIUM)</span>
 			</div>
 			{currentPage === CurrentPage.GALLERY && (
 				<Button
