@@ -13,7 +13,7 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-	title: "Menuiserie de Margeride",
+	title: "Menuiseries de Margeride",
 	description: "",
 };
 

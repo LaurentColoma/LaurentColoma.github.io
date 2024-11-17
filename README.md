@@ -1,1 +1,1 @@
-Site web "Menuiserie de Margeride"
+Site web "Menuiseries de Margeride"

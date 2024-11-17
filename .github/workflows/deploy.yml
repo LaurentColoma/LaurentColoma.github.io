@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./menuiserie-de-margeride
+        working-directory: ./menuiseries-de-margeride
     timeout-minutes: 5
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
         with:
           node-version: "20.x"
           cache: "npm"
-          cache-dependency-path: "./menuiserie-de-margeride/package-lock.json"
+          cache-dependency-path: "./menuiseries-de-margeride/package-lock.json"
 
       - name: Install dependencies
         run: npm ci
@@ -40,7 +40,7 @@ jobs:
         id: deployment
         uses: actions/upload-pages-artifact@v3 # or specific "vX.X.X" version tag for this action
         with:
-          path: ./menuiserie-de-margeride/out
+          path: ./menuiseries-de-margeride/out
 
   # Deployment job
   deploy:
