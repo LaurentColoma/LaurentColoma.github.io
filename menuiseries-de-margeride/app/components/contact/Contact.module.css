@@ -18,3 +18,24 @@
   flex-direction: column;
   gap: 16px;
 }
+
+.map {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .container {
+    height: 75vh;
+    justify-content: flex-end;
+    align-items: unset;
+    padding: 16px;
+  }
+
+  .firstSection {
+    flex-direction: column;
+  }
+
+  .map {
+    display: none;
+  }
+}

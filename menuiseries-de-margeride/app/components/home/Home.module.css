@@ -42,3 +42,13 @@
   60%, 75% { background-image: url("/assets/27.jpg"); left: -450px; }
   80%, 95% { background-image: url("/assets/49.jpg"); left: -600px; }
 }
+
+@media (max-width: 768px) {
+  @keyframes slideshow {
+    0%, 15%, 100% { background-image: url("/assets/22.jpg"); left: 0px; }
+    20%, 35% { background-image: url("/assets/15.jpg"); left: -150px; }
+    40%, 55% { background-image: url("/assets/50.jpg"); left: -300px; }
+    60%, 75% { background-image: url("/assets/18.jpg"); left: -450px; }
+    80%, 95% { background-image: url("/assets/23.jpg"); left: -600px; }
+  }
+}

@@ -30,7 +30,9 @@ const Contact = () => {
 					<BlockText contentText={aboutTexts} />
 					<BlockText contentText={horaire} />
 				</div>
-				<LocalisationMap />
+				<div className={classes.map}>
+					<LocalisationMap />
+				</div>
 			</div>
 			<ContactForm />
 		</div>

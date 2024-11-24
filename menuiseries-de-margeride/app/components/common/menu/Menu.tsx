@@ -14,10 +14,14 @@ const Menu = ({ action }: MenuProps) => {
 		<div className={classes.container}>
 			<div className={classes.enterprise}>
 				<img
+					style={{
+						/* doc here https://github.com/frenic/csstype#what-should-i-do-when-i-get-type-errors */
+						["--image-height" as string]: `${logo.height}px`,
+						["--image-width" as string]: `${logo.width}px`,
+					}}
 					src={logo.src}
 					alt="logo"
-					height={logo.height / 5}
-					width={logo.width / 5}
+					className={classes.logo}
 				/>
 				<div className={classes.titleContainer}>
 					<span className={classes.enterpriseTitle}>
@@ -81,7 +85,7 @@ const Menu = ({ action }: MenuProps) => {
 					aria-label="gallery-menu-button"
 					onClick={() => action(CurrentPage.CONTACTS)}
 				>
-					Informations de contact
+					Contact
 				</Button>
 			</div>
 		</div>

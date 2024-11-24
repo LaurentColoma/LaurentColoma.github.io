@@ -1,10 +1,10 @@
 .container {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   z-index: 9999;
   width: 100vw;
-  height: fit-content;
+  height: 20vh;
   padding: 16px 0px;
   gap: 16px;
 }
@@ -16,6 +16,11 @@
   width: 100%;
   gap: 24px;
   margin-left: 24px;
+}
+
+.logo {
+  height: calc(var(--image-height) / 5);
+  width: calc(var(--image-width) / 5);
 }
 
 .titleContainer {
@@ -56,4 +61,34 @@
 .contactButton {
   width: fit-content;
   color: #F26D85;
+}
+
+@media (max-width: 768px) {
+  .logo {
+    height: calc(var(--image-height) / 8);
+    width: calc(var(--image-width) / 8);
+  }
+
+  .enterpriseTitle {
+    color: #eb4966;
+    font-size: 20px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+  }
+  
+  .enterpriseSubtitle {
+    color: #eb4966;
+    font-size: 12px;
+    font-weight: 700;
+    overflow-wrap: break-word;
+  }
+
+  .buttonContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    overflow: scroll;
+    margin: 0px 24px !important;
+    gap: 8px;
+  }
 }
