@@ -35,7 +35,7 @@ const ContactForm = () => {
 	};
 
 	return (
-		<Card>
+		<Card className={classes.card}>
 			<form onSubmit={handleSubmit} className={classes.form}>
 				<div className={classes.formHeader}>
 					<FormControl>

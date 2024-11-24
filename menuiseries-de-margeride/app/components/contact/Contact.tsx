@@ -25,11 +25,13 @@ const horaire = [
 const Contact = () => {
 	return (
 		<div className={classes.container}>
-			<div className={classes.infos}>
-				<BlockText contentText={aboutTexts} />
-				<BlockText contentText={horaire} />
+			<div className={classes.firstSection}>
+				<div className={classes.infos}>
+					<BlockText contentText={aboutTexts} />
+					<BlockText contentText={horaire} />
+				</div>
+				<LocalisationMap />
 			</div>
-			<LocalisationMap />
 			<ContactForm />
 		</div>
 	);

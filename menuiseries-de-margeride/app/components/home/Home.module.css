@@ -35,7 +35,6 @@
   right: 5vw;
 }
 
-
 @keyframes slideshow {
   0%, 15%, 100% { background-image: url("/assets/diapo_desktop_1.jpg"); left: 0px; }
   20%, 35% { background-image: url("/assets/diapo_desktop_2.jpg"); left: -150px; }
