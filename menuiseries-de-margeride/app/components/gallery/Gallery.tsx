@@ -1,153 +1,359 @@
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 
-import * as images from "../../../public/assets/index";
+import * as images from "@/public/assets/_index";
 import { CurrentPage } from "../app";
 
 const volets = [
 	{
-		original: images.image_11.src,
-		thumbnail: images.image_11.src,
+		original: images.volets_1.src,
+		thumbnail: images.volets_1.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_12.src,
-		thumbnail: images.image_12.src,
+		original: images.volets_2.src,
+		thumbnail: images.volets_2.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_52.src,
-		thumbnail: images.image_52.src,
+		original: images.volets_3.src,
+		thumbnail: images.volets_3.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_58.src,
-		thumbnail: images.image_58.src,
+		original: images.volets_4.src,
+		thumbnail: images.volets_4.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 ];
 const garage_door = [
 	{
-		original: images.image_13.src,
-		thumbnail: images.image_13.src,
+		original: images.porte_garage_1.src,
+		thumbnail: images.porte_garage_1.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_46.src,
-		thumbnail: images.image_46.src,
+		original: images.porte_garage_2.src,
+		thumbnail: images.porte_garage_2.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_47.src,
-		thumbnail: images.image_47.src,
+		original: images.porte_garage_3.src,
+		thumbnail: images.porte_garage_3.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_48.src,
-		thumbnail: images.image_48.src,
+		original: images.porte_garage_4.src,
+		thumbnail: images.porte_garage_4.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_49.src,
-		thumbnail: images.image_49.src,
+		original: images.porte_garage_5.src,
+		thumbnail: images.porte_garage_5.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_garage_6.src,
+		thumbnail: images.porte_garage_6.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_garage_7.src,
+		thumbnail: images.porte_garage_7.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_garage_8.src,
+		thumbnail: images.porte_garage_8.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_garage_9.src,
+		thumbnail: images.porte_garage_9.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_garage_10.src,
+		thumbnail: images.porte_garage_10.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 ];
 const guardrail = [
 	{
-		original: images.image_10.src,
-		thumbnail: images.image_10.src,
+		original: images.garde_corps_1.src,
+		thumbnail: images.garde_corps_1.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_38.src,
-		thumbnail: images.image_38.src,
+		original: images.garde_corps_2.src,
+		thumbnail: images.garde_corps_2.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_39.src,
-		thumbnail: images.image_39.src,
+		original: images.garde_corps_3.src,
+		thumbnail: images.garde_corps_3.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.garde_corps_4.src,
+		thumbnail: images.garde_corps_4.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.garde_corps_5.src,
+		thumbnail: images.garde_corps_5.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.garde_corps_6.src,
+		thumbnail: images.garde_corps_6.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 ];
 const barrier = [
 	{
-		original: images.image_30.src,
-		thumbnail: images.image_30.src,
+		original: images.cloture_1.src,
+		thumbnail: images.cloture_1.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_31.src,
-		thumbnail: images.image_31.src,
+		original: images.cloture_2.src,
+		thumbnail: images.cloture_2.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_32.src,
-		thumbnail: images.image_32.src,
+		original: images.cloture_3.src,
+		thumbnail: images.cloture_3.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_33.src,
-		thumbnail: images.image_33.src,
+		original: images.cloture_4.src,
+		thumbnail: images.cloture_4.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.cloture_5.src,
+		thumbnail: images.cloture_5.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.cloture_6.src,
+		thumbnail: images.cloture_6.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.barriere_piscine_1.src,
+		thumbnail: images.barriere_piscine_1.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.barriere_piscine_2.src,
+		thumbnail: images.barriere_piscine_2.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+];
+const pergolas = [
+	{
+		original: images.pergolas_1.src,
+		thumbnail: images.pergolas_1.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.pergolas_2.src,
+		thumbnail: images.pergolas_2.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.pergolas_3.src,
+		thumbnail: images.pergolas_3.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.pergolas_4.src,
+		thumbnail: images.pergolas_4.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 ];
 const others = [
 	{
-		original: images.image_28.src,
-		thumbnail: images.image_28.src,
+		original: images.autre_1.src,
+		thumbnail: images.autre_1.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_29.src,
-		thumbnail: images.image_29.src,
+		original: images.autre_2.src,
+		thumbnail: images.autre_2.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_53.src,
-		thumbnail: images.image_53.src,
+		original: images.autre_3.src,
+		thumbnail: images.autre_3.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_55.src,
-		thumbnail: images.image_55.src,
+		original: images.autre_4.src,
+		thumbnail: images.autre_4.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_57.src,
-		thumbnail: images.image_57.src,
+		original: images.autre_7.src,
+		thumbnail: images.autre_7.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_54.src,
-		thumbnail: images.image_54.src,
+		original: images.autre_8.src,
+		thumbnail: images.autre_8.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
 	{
-		original: images.image_56.src,
-		thumbnail: images.image_56.src,
+		original: images.autre_9.src,
+		thumbnail: images.autre_9.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_10.src,
+		thumbnail: images.autre_10.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_11.src,
+		thumbnail: images.autre_11.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_12.src,
+		thumbnail: images.autre_12.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_13.src,
+		thumbnail: images.autre_13.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_14.src,
+		thumbnail: images.autre_14.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_15.src,
+		thumbnail: images.autre_15.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_16.src,
+		thumbnail: images.autre_16.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_17.src,
+		thumbnail: images.autre_17.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_19.src,
+		thumbnail: images.autre_19.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.autre_20.src,
+		thumbnail: images.autre_20.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_1.src,
+		thumbnail: images.porte_1.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_2.src,
+		thumbnail: images.porte_1.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_3.src,
+		thumbnail: images.porte_3.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_4.src,
+		thumbnail: images.porte_4.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.porte_5.src,
+		thumbnail: images.porte_5.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.moustiquaire_1.src,
+		thumbnail: images.moustiquaire_1.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.moustiquaire_2.src,
+		thumbnail: images.moustiquaire_2.src,
+		thumbnailHeight: 69,
+		thumbnailWidth: 92,
+	},
+	{
+		original: images.moustiquaire_3.src,
+		thumbnail: images.moustiquaire_3.src,
 		thumbnailHeight: 69,
 		thumbnailWidth: 92,
 	},
@@ -168,6 +374,9 @@ const Gallery = ({ currentPage }: GalleryProps) => {
 				<ImageGallery items={guardrail} />
 			)}
 			{currentPage === CurrentPage.BARRIER && <ImageGallery items={barrier} />}
+			{currentPage === CurrentPage.PERGOLAS && (
+				<ImageGallery items={pergolas} />
+			)}
 			{currentPage === CurrentPage.OTHERS && <ImageGallery items={others} />}
 		</>
 	);

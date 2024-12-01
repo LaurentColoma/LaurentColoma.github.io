@@ -15,6 +15,7 @@ export enum CurrentPage {
 	GARAGE_DOOR = "garage_door",
 	GUARDRAIL = "guardrail",
 	BARRIER = "barrier",
+	PERGOLAS = "pergolas",
 	OTHERS = "others",
 	CONTACTS = "contacts",
 }

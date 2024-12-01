@@ -2,8 +2,6 @@ import autre_1 from "./autre_1.jpg";
 import autre_2 from "./autre_2.jpg";
 import autre_3 from "./autre_3.jpg";
 import autre_4 from "./autre_4.jpg";
-import autre_5 from "./autre_5.jpg";
-import autre_6 from "./autre_6.jpg";
 import autre_7 from "./autre_7.jpg";
 import autre_8 from "./autre_8.jpg";
 import autre_9 from "./autre_9.jpg";
@@ -15,10 +13,8 @@ import autre_14 from "./autre_14.jpg";
 import autre_15 from "./autre_15.jpg";
 import autre_16 from "./autre_16.jpg";
 import autre_17 from "./autre_17.jpg";
-import autre_18 from "./autre_18.jpg";
 import autre_19 from "./autre_19.jpg";
 import autre_20 from "./autre_20.jpg";
-import autre_21 from "./autre_21.jpg";
 
 import barriere_piscine_1 from "./barriere_piscine_1.jpg";
 import barriere_piscine_2 from "./barriere_piscine_2.jpg";
@@ -84,13 +80,16 @@ import porte_garage_8 from "./porte_garage_8.jpg";
 import porte_garage_9 from "./porte_garage_9.jpg";
 import porte_garage_10 from "./porte_garage_10.jpg";
 
+import volets_1 from "./volets_1.jpg";
+import volets_2 from "./volets_2.jpg";
+import volets_3 from "./volets_3.jpg";
+import volets_4 from "./volets_4.jpg";
+
 export {
 	autre_1,
 	autre_2,
 	autre_3,
 	autre_4,
-	autre_5,
-	autre_6,
 	autre_7,
 	autre_8,
 	autre_9,
@@ -102,10 +101,8 @@ export {
 	autre_15,
 	autre_16,
 	autre_17,
-	autre_18,
 	autre_19,
 	autre_20,
-	autre_21,
 	barriere_piscine_1,
 	barriere_piscine_2,
 	camion_contact,
@@ -158,4 +155,8 @@ export {
 	porte_garage_8,
 	porte_garage_9,
 	porte_garage_10,
+	volets_1,
+	volets_2,
+	volets_3,
+	volets_4,
 };

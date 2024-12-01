@@ -3,7 +3,7 @@ import { Button, ButtonGroup } from "@mui/material";
 import { CurrentPage } from "../../app";
 
 import classes from "./Menu.module.css";
-import { logo } from "../../../../public/assets";
+import { logo } from "@/public/assets/_index";
 
 interface MenuProps {
 	action: (value: CurrentPage) => void;
@@ -70,6 +70,13 @@ const Menu = ({ action }: MenuProps) => {
 						onClick={() => action(CurrentPage.BARRIER)}
 					>
 						Barrieres murale et piscine
+					</Button>
+					<Button
+						className={classes.button}
+						aria-label="gallery-menu-button"
+						onClick={() => action(CurrentPage.PERGOLAS)}
+					>
+						Pergolas
 					</Button>
 					<Button
 						className={classes.button}
